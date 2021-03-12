@@ -10,4 +10,4 @@ jobs:
       - name: "Generate human readable id"
         id: human-readable
         uses: ./
-      - run: echo '${{ steps.date.human-readable.generated-id }}'
+      - run: echo '${{ steps.human-readable.outputs.id }}'
