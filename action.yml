@@ -1,0 +1,13 @@
+name: 'human-readable-id-action'
+description: Creates human readable ID as output
+author: 'Mateusz Gachowski'
+branding:
+  icon: 'hash'
+  color: 'yellow'
+inputs:
+  output:
+    description: 'Generated readable ID'
+    required: true
+runs:
+  using: 'node14'
+  main: 'index.js'

@@ -1,0 +1,12 @@
+name: Build Pipeline
+
+on: [push]
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v1
+      - name: "Generate human readable id"
+        id: human-readable
+        uses: ./
+      - run: echo '${{ steps.date.human-readable.generated-id }}'
