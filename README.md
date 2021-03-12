@@ -20,5 +20,7 @@ steps:
   - uses: actions/human-readable-id-action@v1.0
     id: human-readable
   - name: Print out the id
-    run: echo '${{ steps.date.human-readable.generated-id }}'
+    run: echo '${{ steps.human-readable.outputs.id }}'
+
+    ## e.g. outputs: lazy-badger-88
 ```
